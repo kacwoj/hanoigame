@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset="UTF-8">  
+    <title>Hanoi Game App</title>  
+
+<link rel="stylesheet" href="styles/main.css">
+<script type="text/javascript" src="scripts/main.js"></script>
+  
+</head>
+<body>
+
+    <div id="container">
+
+
+        <div id="bar0"><img src="assets/Bar.png" /></div>
+
+        <div id="bar1"><img src="assets/Bar.png" /></div>
+
+        <div id="bar2"><img src="assets/Bar.png" /></div>
+        <div id="bottombar"></div>
+
+        <div class="disk" id="disk0" ><img class="insideImg"  style="left:94px;"  src="assets/Bar2.png" /></div> 
+        <div class="disk" id="disk1" ><img class="insideImg"  style="left:74px;"  src="assets/Bar2.png" /></div> 
+        <div class="disk" id="disk2" ><img class="insideImg"  style="left:54px;"  src="assets/Bar2.png" /></div> 
+        <div class="disk" id="disk3" ><img class="insideImg"  style="left:34px;"  src="assets/Bar2.png" /></div> 
+        <div class="disk" id="disk4" ><img class="insideImg"  style="left:14px;"  src="assets/Bar2.png" /></div> 
+
+        <button onclick="executeHanoi()" >Start</button>
+        
+        <label>Prędkość 
+            <select id="speedSelectList" >
+                <option  value="1" >szybko</option>
+                <option  value="10" >średnio</option>
+                <option  value="20" >wolno</option>
+            </select>
+        </label>
+
+        <label>Liczba kółek
+            <select id="diskSelectList" >
+                <option  value="5" >5 kółek</option>
+                <option  value="4" >4 kółka</option>
+                <option  value="3" >3 kółka</option>
+            </select>
+        </label>
+    </div> 
+    
+</body>
+</html>
